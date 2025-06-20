@@ -13,9 +13,6 @@
             --light: #ecf0f1;
             --dark: #2c3e50;
             --success: #2ecc71;
-            --background: #f9f9f9;
-            --card-bg: white;
-            --header-bg: white;
         }
         
         * {
@@ -26,10 +23,9 @@
         }
         
         body {
-            background-color: var(--background);
-            color: var(--dark);
+            background-color: #f9f9f9;
+            color: #333;
             line-height: 1.6;
-            transition: background-color 0.3s, color 0.3s;
         }
         
         a {
@@ -89,12 +85,11 @@
         
         /* Header Styles */
         header {
-            background-color: var(--header-bg);
+            background-color: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 100;
-            transition: background-color 0.3s;
         }
         
         nav {
@@ -102,12 +97,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
-        }
-        
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: 15px;
         }
         
         .logo-container {
@@ -157,20 +146,6 @@
             color: var(--primary);
         }
         
-        .theme-toggle {
-            background: none;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            padding: 5px;
-            transition: transform 0.3s;
-            color: var(--dark);
-        }
-        
-        .theme-toggle:hover {
-            transform: scale(1.1);
-        }
-        
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -193,7 +168,7 @@
         
         /* About Section */
         .about {
-            background-color: var(--card-bg);
+            background-color: white;
         }
         
         .about-content {
@@ -255,20 +230,19 @@
         }
         
         .skill-card {
-            background-color: var(--card-bg);
+            background-color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s;
         }
         
         .skill-card ul {
-            padding-left: 20px;
-            margin: 10px 0;
+            padding-left: 20px; /* Moves bullets inward */
+            margin: 10px 0; /* Adds space above/below the list */
         }
 
         .skill-card li {
-            margin-bottom: 5px;
+            margin-bottom: 5px; /* Adds space between list items */
         }
         
         .skill-card h4 {
@@ -289,11 +263,11 @@
         }
         
         .program-card {
-            background-color: var(--card-bg);
+            background-color: white;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, background-color 0.3s;
+            transition: transform 0.3s;
         }
         
         .program-card:hover {
@@ -328,7 +302,7 @@
         
         /* Testimonials Section */
         .testimonials {
-            background-color: var(--card-bg);
+            background-color: white;
             text-align: center;
         }
         
@@ -344,7 +318,6 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: background-color 0.3s;
         }
         
         .testimonial-card .quote {
@@ -371,11 +344,10 @@
         }
         
         .team-member {
-            background-color: var(--card-bg);
+            background-color: white;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s;
         }
         
         .team-member-image {
@@ -404,7 +376,7 @@
         
         /* SPAR Section */
         .spar {
-            background-color: var(--card-bg);
+            background-color: white;
         }
         
         .spar-content {
@@ -440,39 +412,9 @@
             border-left: 3px solid var(--accent);
         }
         
-        /* Events Section Styles */
-        .event-toggle {
-            display: flex;
-            gap: 10px;
-            margin: 20px 0 30px;
-        }
-        
-        .event-btn {
-            padding: 8px 20px;
-            border: none;
-            background: #f0f0f0;
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .event-btn.active {
-            background: var(--accent);
-            color: white;
-        }
-        
-        .event-content {
-            display: none;
-        }
-        
-        .event-content.active {
-            display: block;
-        }
-        
         /* Contact Section */
         .contact {
-            background-color: var(--card-bg);
+            background-color: white;
         }
         
         .contact-container {
@@ -514,9 +456,6 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 16px;
-            background-color: var(--card-bg);
-            color: var(--dark);
-            transition: background-color 0.3s;
         }
         
         .form-group textarea {
@@ -529,12 +468,11 @@
         }
         
         .faq-item {
-            background-color: var(--card-bg);
+            background-color: white;
             border-radius: 10px;
             margin-bottom: 15px;
             overflow: hidden;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s;
         }
         
         .faq-question {
@@ -546,7 +484,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: background-color 0.3s;
         }
         
         .faq-answer {
@@ -563,10 +500,9 @@
         
         /* Footer */
         footer {
-            background-color: var(--primary);
+            background-color: var(--dark);
             color: white;
             padding: 60px 0 20px;
-            transition: background-color 0.3s;
         }
         
         .footer-content {
@@ -628,52 +564,6 @@
             font-size: 14px;
         }
         
-        /* Dark Mode Styles */
-        [data-theme="dark"] {
-            --primary: #60a5fa;
-            --secondary: #a78bfa;
-            --accent: #f87171;
-            --light: #1f2937;
-            --dark: #f9fafb;
-            --success: #34d399;
-            --background: #111827;
-            --card-bg: #1f2937;
-            --header-bg: #1f2937;
-        }
-        
-        [data-theme="dark"] .hero {
-            background: linear-gradient(135deg, #1e40af, #7c3aed);
-        }
-        
-        [data-theme="dark"] .faq-question {
-            background-color: #1e40af;
-        }
-        
-        [data-theme="dark"] .form-group input,
-        [data-theme="dark"] .form-group textarea,
-        [data-theme="dark"] .form-group select {
-            background-color: #374151;
-            border-color: #4b5563;
-        }
-        
-        [data-theme="dark"] footer {
-            background-color: #111827;
-            border-top: 1px solid #374151;
-        }
-        
-        [data-theme="dark"] .footer-column a {
-            color: #9ca3af;
-        }
-        
-        [data-theme="dark"] .event-btn {
-            background: #374151;
-            color: var(--dark);
-        }
-        
-        [data-theme="dark"] .event-btn.active {
-            background: var(--accent);
-        }
-        
         /* Responsive Styles */
         @media (max-width: 992px) {
             .about-content,
@@ -697,7 +587,7 @@
                 left: -100%;
                 width: 100%;
                 height: calc(100vh - 80px);
-                background-color: var(--header-bg);
+                background-color: white;
                 flex-direction: column;
                 align-items: center;
                 padding-top: 40px;
@@ -735,19 +625,14 @@
                     <img src="The Argument Lab.png" alt="The Argument Lab Logo" class="logo-img">
                     <div class="logo-text">The <span>Argument</span> Lab</div>
                 </div>
-                <div class="nav-right">
-                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                        <span class="theme-icon">🌙</span>
-                    </button>
-                    <button class="mobile-menu-btn">☰</button>
-                    <ul class="nav-links">
-                        <li><a href="#about">About Us</a></li>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
                         <li><a href="#welcome">Skills</a></li>
                         <li><a href="#events">Events</a></li>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+                </ul>
             </nav>
         </div>
     </header>
@@ -756,7 +641,8 @@
     <section class="hero">
         <div class="container">
             <h1 style="font-size: 40px;">Empowering Young Minds Through Speech & Debate</h1>
-            <p>Join our summer camps designed to build confidence, critical thinking, and communication skills for students in grades 4-8.</p>
+            <p >Join our summer camps designed to build confidence, critical thinking, and communication skills for students in grades 4-8.</p>
+
         </div>
     </section>
 
@@ -814,67 +700,143 @@
             </div>
         </div>
     </section>
-
-    <!-- Events Section -->
-    <section id="events" class="spar">
-        <div class="container">
-            <h2 style="font-size: 30px;">Events</h2>
-            <div class="event-toggle">
-                <button class="event-btn active" data-event="spar">SPAR Debate</button>
-                <button class="event-btn" data-event="impromptu">Impromptu Speaking</button>
-            </div>
-            
-            <div class="spar-content">
-                <div class="event-text">
-                    <!-- SPAR Content (default visible) -->
-                    <div class="event-content active" id="spar-content">
-                        <h4 style="font-size: 26px;">How SPAR Works:</h4>
-                        <p style="font-size: 20px;">SPAR (Spontaneous Argumentation) is a fun, fast-paced debate format we use to help students quickly develop their argumentation skills. It's perfect for beginners and helps build confidence in public speaking.</p>
-                        
-                        <div class="event-steps">
-                            <div class="event-step">
-                                <strong style="font-size: 20px;"> Topic:</strong> <text style="font-size: 20px;"> A simple, fun topic is announced (e.g., "Cats are better than dogs") </text>
-                            </div>
-                            <div class="event-step">
-                                <strong style="font-size: 20px;">Preparation:</strong> <text style="font-size: 20px;"> Students get 2 minutes to prepare their arguments </text>
-                            </div>
-                            <div class="event-step">
-                                <strong style="font-size: 20px;">Structure:</strong> <text style="font-size: 20px;"> Each speaker presents their case, then cross-examines their opponent </text>
-                            </div>
-                            <div class="event-step">
-                                <strong style="font-size: 20px;">Judging:</strong> <text style="font-size: 20px;"> The audience or judges determine which side made the most convincing arguments </text>
-                            </div>
-                        </div>
-                    </div>
+<!-- Events Section -->
+<section id="events" class="spar">
+    <div class="container">
+        <h2 style="font-size: 30px;">Events</h2>
+        <div class="event-toggle">
+            <button class="event-btn active" data-event="spar">SPAR Debate</button>
+            <button class="event-btn" data-event="impromptu">Impromptu Speaking</button>
+        </div>
+        
+        <div class="spar-content">
+            <div class="event-text">
+                <!-- SPAR Content (default visible) -->
+                <div class="event-content active" id="spar-content">
+                    <h4 style="font-size: 26px;">How SPAR Works:</h4>
+                    <p style="font-size: 20px;">SPAR (Spontaneous Argumentation) is a fun, fast-paced debate format we use to help students quickly develop their argumentation skills. It's perfect for beginners and helps build confidence in public speaking.</p>
                     
-                    <!-- Impromptu Content (hidden by default) -->
-                    <div class="event-content" id="impromptu-content">
-                        <h4 style="font-size: 26px;">How Impromptu Works:</h4>
-                        <p style="font-size: 20px;">Impromptu Speaking challenges students to organize and deliver a short speech on a random topic with minimal preparation time. This event develops quick thinking and clear communication skills.</p>
-                        
-                        <div class="event-steps">
-                            <div class="event-step">
-                                <strong style="font-size: 20px;">Topic:</strong> <text style="font-size: 20px;">Students receive a random quote, word, or concept </text>
-                            </div>
-                            <div class="event-step">
-                                <strong style="font-size: 20px;">Preparation:</strong> <text style="font-size: 20px;">2 minutes to prepare a 5 minute speech</text>
-                            </div>
-                            <div class="event-step">
-                                <strong style="font-size: 20px;">Structure:</strong> <text style="font-size: 20px;">Introduction, 2-3 main points, and conclusion</text>
-                            </div>
-                            <div class="event-step">
-                                <strong style="font-size: 20px;">Judging:</strong> <text style="font-size: 20px;">Based on content, organization, and delivery</text>
-                            </div>
+                    <div class="event-steps">
+                        <div class="event-step">
+                            <strong style="font-size: 20px;"> Topic:</strong> <text style="font-size: 20px;"> A simple, fun topic is announced (e.g., "Cats are better than dogs") </text>
+                        </div>
+                        <div class="event-step">
+                            <strong style="font-size: 20px;">Preparation:</strong> <text style="font-size: 20px;"> Students get 2 minutes to prepare their arguments </text>
+                        </div>
+                        <div class="event-step">
+                            <strong style="font-size: 20px;">Structure:</strong> <text style="font-size: 20px;"> Each speaker presents their case, then cross-examines their opponent </text>
+                        </div>
+                        <div class="event-step">
+                            <strong style="font-size: 20px;">Judging:</strong> <text style="font-size: 20px;"> The audience or judges determine which side made the most convincing arguments </text>
                         </div>
                     </div>
                 </div>
                 
-                <div class="spar-image">
-                    <img src="WhatsApp Image 2025-02-23 at 15.35.26.jpeg" alt="Debate Event Structure">
+                <!-- Impromptu Content (hidden by default) -->
+                <div class="event-content" id="impromptu-content">
+                    <h4 style="font-size: 26px;">How Impromptu Works:</h4>
+                    <p style="font-size: 20px;">Impromptu Speaking challenges students to organize and deliver a short speech on a random topic with minimal preparation time. This event develops quick thinking and clear communication skills.</p>
+                    
+                    <div class="event-steps">
+                        <div class="event-step">
+                            <strong style="font-size: 20px;">Topic:</strong> <text style="font-size: 20px;">Students receive a random quote, word, or concept </text>
+                        </div>
+                        <div class="event-step">
+                            <strong style="font-size: 20px;">Preparation:</strong> <text style="font-size: 20px;">2 minutes to prepare a 5 minute speech</text>
+                        </div>
+                        <div class="event-step">
+                            <strong style="font-size: 20px;">Structure:</strong> <text style="font-size: 20px;">Introduction, 2-3 main points, and conclusion</text>
+                        </div>
+                        <div class="event-step">
+                            <strong style="font-size: 20px;">Judging:</strong> <text style="font-size: 20px;">Based on content, organization, and delivery</text>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+            <div class="spar-image">
+                <img src="WhatsApp Image 2025-02-23 at 15.35.26.jpeg" alt="Debate Event Structure">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<style>
+    /* Events Section Styles */
+    .event-toggle {
+        display: flex;
+        gap: 10px;
+        margin: 20px 0 30px;
+    }
+    
+    .event-btn {
+        padding: 8px 20px;
+        border: none;
+        background: #f0f0f0;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    
+    .event-btn.active {
+        background: #e74c3c;
+        color: white;
+    }
+    
+    .event-content {
+        display: none;
+    }
+    
+    .event-content.active {
+        display: block;
+    }
+    
+    /* Keep existing spar-content styles */
+    .spar-content {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .spar-text, .event-text {
+        flex: 1;
+    }
+    
+    .spar-image {
+        flex: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .spar-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+</style>
+
+<script>
+    // Event Toggle Functionality
+    document.querySelectorAll('.event-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            document.querySelectorAll('.event-btn').forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Hide all content
+            document.querySelectorAll('.event-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected content
+            const eventType = this.dataset.event;
+            document.getElementById(`${eventType}-content`).classList.add('active');
+        });
+    });
+</script>
 
     <!-- FAQ Section -->
     <section id="faq" class="faq">
@@ -900,9 +862,7 @@
                     <p>The program is completely free.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
+    
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -986,10 +946,6 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="copyright">
-                <p>&copy; 2024 The Argument Lab. All rights reserved.</p>
-            </div>
         </div>
     </footer>
 
@@ -1048,51 +1004,6 @@
                         navLinks.classList.remove('active');
                     }
                 }
-            });
-        });
-
-        // Theme Toggle Functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-        // Check for saved theme or use system preference
-        const currentTheme = localStorage.getItem('theme') || 
-                            (prefersDarkScheme.matches ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', currentTheme);
-
-        // Update icon based on theme
-        const updateIcon = () => {
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            themeToggle.querySelector('.theme-icon').textContent = isDark ? '☀️' : '🌙';
-        };
-        updateIcon();
-
-        // Toggle theme on button click
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateIcon();
-        });
-
-        // Event Toggle Functionality
-        document.querySelectorAll('.event-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Remove active class from all buttons
-                document.querySelectorAll('.event-btn').forEach(b => b.classList.remove('active'));
-                // Add active class to clicked button
-                this.classList.add('active');
-                
-                // Hide all content
-                document.querySelectorAll('.event-content').forEach(content => {
-                    content.classList.remove('active');
-                });
-                
-                // Show selected content
-                const eventType = this.dataset.event;
-                document.getElementById(`${eventType}-content`).classList.add('active');
             });
         });
     </script>
